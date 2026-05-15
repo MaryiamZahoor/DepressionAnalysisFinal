@@ -6,26 +6,26 @@ from typing import Optional, Iterable
 # ------------------ EDIT THESE PATHS ------------------
 
 # CREMA-D processed root: <video_id>/<CSV>
-CREMA_OUTPUT_DIR     = "/media/root918/OS/MaryiamProject/CREMA-D/copiedFiles/"
+CREMA_OUTPUT_DIR     = "/media/root918/OS/Project/CREMA-D/copiedFiles/"
 CREMA_COMBINED_CSV   = "affwild_resnet_au_vgg_with_gt.csv"
 CREMA_LABEL_COL      = "Actual_Emotion"   # or "GT_Emotion"
 
 # RAVDESS split text files and label CSV
-RAV_TRAIN_TXT = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/data/train_videos_RAV.txt"
-RAV_VAL_TXT   = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/data/val_videos_RAV.txt"
-RAV_TEST_TXT  = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/data/test_videos_RAV.txt"
+RAV_TRAIN_TXT = "/media/root918/OS/Project/CNN_RNN_CREMAD/data/train_videos_RAV.txt"
+RAV_VAL_TXT   = "/media/root918/OS/Project/CNN_RNN_CREMAD/data/val_videos_RAV.txt"
+RAV_TEST_TXT  = "/media/root918/OS/Project/CNN_RNN_CREMAD/data/test_videos_RAV.txt"
 
 # Example label CSV path with columns: actor_id, emotion, is_song, filename
 # filename looks like: "02-01-05-01-01-02-01.mp4"
-RAV_LABEL_CSV = "/media/root918/DATA/Projects/Maryiam_Projects/DepressionAnalysis/CREMAD_EXP/RAVDESS_testing/ravdess_groundtruth_video_only.xlsx"
+RAV_LABEL_CSV = "/media/root918/DATA/Projects/Projects/DepressionAnalysis/CREMAD_EXP/RAVDESS_testing/ravdess_groundtruth_video_only.xlsx"
 
 # CREMA-D split files (already created)
-CREMA_TRAIN_TXT = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/data/train_videos_full.txt"
-CREMA_VAL_TXT   = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/data/val_videos_full.txt"
-CREMA_TEST_TXT  = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/data/test_videos_full.txt"  # may not exist
+CREMA_TRAIN_TXT = "/media/root918/OS/Project/CNN_RNN_CREMAD/data/train_videos_full.txt"
+CREMA_VAL_TXT   = "/media/root918/OS/Project/CNN_RNN_CREMAD/data/val_videos_full.txt"
+CREMA_TEST_TXT  = "/media/root918/OS/Project/CNN_RNN_CREMAD/data/test_videos_full.txt"  # may not exist
 
 # Output merged split files
-OUT_DIR = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/data/"
+OUT_DIR = "/media/root918/OS/Project/CNN_RNN_CREMAD/data/"
 os.makedirs(OUT_DIR, exist_ok=True)
 COMB_TRAIN_TXT = os.path.join(OUT_DIR, "train_videos_COMBINED.txt")
 COMB_VAL_TXT   = os.path.join(OUT_DIR, "val_videos_COMBINED.txt")
