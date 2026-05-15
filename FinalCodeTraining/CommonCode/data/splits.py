@@ -12,15 +12,15 @@ from config import (
     emotion_to_idx,
 )
 #SPLIT LISTS
-SPLIT_PATH= "/media/root918/DATA/Projects/Maryiam_Projects/DepressionAnalysis/CREMAD_EXP/Project/data/2SplitTrain_Val/"
+SPLIT_PATH= "/media/root918/DATA/Projects/Projects/DepressionAnalysis/CREMAD_EXP/Project/data/2SplitTrain_Val/"
 
 TRAIN_LIST   = os.path.join(SPLIT_PATH, "train_videos_full.txt")
 VAL_LIST     = os.path.join(SPLIT_PATH, "val_videos_full.txt")
 TEST_LIST    = os.path.join(SPLIT_PATH, "test_videos_full.txt")
 
-#INCLUDE_LIST = "/media/root918/DATA/Projects/Maryiam_Projects/DepressionAnalysis/CREMAD_EXP/matching_videos.txt"   # one video_id per line, or None
+#INCLUDE_LIST = "/media/root918/DATA/Projects/Projects/DepressionAnalysis/CREMAD_EXP/matching_videos.txt"   # one video_id per line, or None
 INCLUDE_LIST = None
-EXCLUDE_LIST = "/media/root918/DATA/Projects/Maryiam_Projects/DepressionAnalysis/CREMAD_EXP/Project/exclude_videos.txt"   # one video_id per line, or None
+EXCLUDE_LIST = "/media/root918/DATA/Projects/Projects/DepressionAnalysis/CREMAD_EXP/Project/exclude_videos.txt"   # one video_id per line, or None
 
 SPLIT_LABEL_COL = "Actual_Emotion"  # or "GT_Emotion"
 
