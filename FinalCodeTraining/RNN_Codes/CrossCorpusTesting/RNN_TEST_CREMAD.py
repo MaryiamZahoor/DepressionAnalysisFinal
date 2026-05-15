@@ -34,18 +34,18 @@ from sklearn.metrics import classification_report, confusion_matrix
 from models.CNN_RNNmodel import TemporalFFRNN
 
 # ===================== PATHS / PARAMS (edit as needed) =====================
-RAVDESS_ROOT = "/media/root918/OS/MaryiamProject/copiedFilesRAVDESS"
-CREMAD_ROOT  = "/media/root918/OS/MaryiamProject/CREMA-D/copiedFiles/"  # flat: <vid>/...
+RAVDESS_ROOT = "/media/root918/OS/[REDACTED]Project/copiedFilesRAVDESS"
+CREMAD_ROOT  = "/media/root918/OS/[REDACTED]Project/CREMA-D/copiedFiles/"  # flat: <vid>/...
 
-SPLIT_PATH = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/data"
+SPLIT_PATH = "/media/root918/OS/[REDACTED]Project/CNN_RNN_CREMAD/data"
 TRAIN_LIST = os.path.join(SPLIT_PATH, "train_videos_RAV.txt")
 VAL_LIST   = os.path.join(SPLIT_PATH, "val_videos_RAV.txt")
 TEST_LIST  = os.path.join(SPLIT_PATH, "test_videos_RAV.txt")
 
-GRID_RESULTS_CSV         = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/artifacts/ravdess_GridSearch_unscaled_RNN/ravdess_GridSearch_unscaled_RNN/rnn_grid_results_RAVDESS.csv"
-MASTER_FEATURE_COLS_JSON = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/data/master_feature_cols.json"
+GRID_RESULTS_CSV         = "/media/root918/OS/[REDACTED]Project/CNN_RNN_CREMAD/artifacts/ravdess_GridSearch_unscaled_RNN/ravdess_GridSearch_unscaled_RNN/rnn_grid_results_RAVDESS.csv"
+MASTER_FEATURE_COLS_JSON = "/media/root918/OS/[REDACTED]Project/CNN_RNN_CREMAD/data/master_feature_cols.json"
 
-ART_DIR = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/artifacts/ravdess6class_final_retrain_RNN"
+ART_DIR = "/media/root918/OS/[REDACTED]Project/CNN_RNN_CREMAD/artifacts/ravdess6class_final_retrain_RNN"
 os.makedirs(ART_DIR, exist_ok=True)
 
 # Global training controls (early stop etc.)

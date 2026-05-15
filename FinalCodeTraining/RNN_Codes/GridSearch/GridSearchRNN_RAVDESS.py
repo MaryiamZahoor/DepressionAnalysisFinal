@@ -38,7 +38,7 @@ PREFETCH_FACTOR = 4
 #   RAVDESS CONSTANTS
 # ======================
 # Split lists (RAVDESS)
-SPLIT_PATH  = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/data/"
+SPLIT_PATH  = "/media/root918/OS/[REDACTED]Project/CNN_RNN_CREMAD/data/"
 TRAIN_LIST  = os.path.join(SPLIT_PATH, "train_videos_RAV.txt")
 VAL_LIST    = os.path.join(SPLIT_PATH, "val_videos_RAV.txt")
 TEST_LIST   = os.path.join(SPLIT_PATH, "test_videos_RAV.txt")
@@ -55,7 +55,7 @@ EXCLUDE_LIST = None  # set a path if you want to exclude some video IDs
 LABEL_COL          = "emotion"
 SKIP_FIRST_N       = getattr(CFG, "SKIP_FRAME", 0)
 COMBINED_CSV_NAME  = "au_resnet_vgg_with_gt.csv"
-OUTPUT_DIR         = "/media/root918/OS/MaryiamProject/copiedFilesRAVDESS/"
+OUTPUT_DIR         = "/media/root918/OS/[REDACTED]Project/copiedFilesRAVDESS/"
 
 # RAVDESS 8-class mapping
 EMOTION_TO_IDX = {
@@ -74,7 +74,7 @@ CLASS_NAMES = [IDX_TO_EMO[i] for i in range(len(IDX_TO_EMO))]
 
 # Artifacts
 ART_DIR_TAG   = "ravdess_GridSearch_unscaled_RNN/ravdess_GridSearch_unscaled_RNN"
-PROJECT_DIR   = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/"
+PROJECT_DIR   = "/media/root918/OS/[REDACTED]Project/CNN_RNN_CREMAD/"
 ART_DIR_SUB   = os.path.join(PROJECT_DIR, "artifacts", ART_DIR_TAG)
 os.makedirs(ART_DIR_SUB, exist_ok=True)
 GRID_OUT_DIR  = os.path.join(ART_DIR_SUB, "grid_config_RAV")

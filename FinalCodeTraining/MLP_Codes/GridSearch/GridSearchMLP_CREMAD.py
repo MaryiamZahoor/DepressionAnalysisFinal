@@ -71,11 +71,11 @@ def _current_lr(optim):
     return optim.param_groups[0]['lr'] if optim.param_groups else float('nan')
 
 # ---------- Paths / lists ----------
-SPLIT_PATH     = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/data/"
+SPLIT_PATH     = "/media/root918/OS/[REDACTED]Project/CNN_RNN_CREMAD/data/"
 TRAIN_LIST     = os.path.join(SPLIT_PATH, "train_videos_full.txt")
 VAL_LIST       = os.path.join(SPLIT_PATH, "val_videos_full.txt")
 TEST_LIST      = os.path.join(SPLIT_PATH, "test_videos_full.txt")
-BEST_MODEL_TRAINED_final="/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/artifacts/cremad_GridSearch_unscaled_MLP/bestModel_std/"
+BEST_MODEL_TRAINED_final="/media/root918/OS/[REDACTED]Project/CNN_RNN_CREMAD/artifacts/cremad_GridSearch_unscaled_MLP/bestModel_std/"
 select="cv_mean_acc"    #cv_mean_acc    cv_mean_video_acc
 total_epochs=100
 Model_name= str(total_epochs)+"_epochs_"+ select.split("_")[2]
@@ -86,7 +86,7 @@ os.makedirs(os.path.dirname(FEATCOLS_FINAL), exist_ok=True)
 BEST_WEIGHTS_PATH_FINAL=os.path.join( BEST_MODEL_TRAINED_final,Model_name, "best.pt")
 os.makedirs(os.path.dirname(BEST_WEIGHTS_PATH_FINAL), exist_ok=True)
 INCLUDE_LIST = None
-EXCLUDE_LIST = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/exclude_videos.txt"
+EXCLUDE_LIST = "/media/root918/OS/[REDACTED]Project/CNN_RNN_CREMAD/exclude_videos.txt"
 
 # ---------- Labels / columns ----------
 LABEL_COL          = getattr(CFG, "SPLIT_LABEL_COL", "Actual_Emotion")
@@ -96,7 +96,7 @@ IDX_TO_EMO         = {v: k for k, v in EMOTION_TO_IDX.items()}
 
 # ---------- Artifacts layout ----------
 ART_DIR_TAG = "cremad_GridSearch_unscaled_MLP"
-PROJECT_DIR = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/"
+PROJECT_DIR = "/media/root918/OS/[REDACTED]Project/CNN_RNN_CREMAD/"
 ART_DIR_SUB = os.path.join(PROJECT_DIR, "artifacts", ART_DIR_TAG)
 os.makedirs(ART_DIR_SUB, exist_ok=True)
 

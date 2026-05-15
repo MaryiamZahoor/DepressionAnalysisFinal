@@ -21,8 +21,8 @@ from typing import List
 from models.TwoLayerMLP import FrameClassifier
 
 # ---------------- CONFIG: EDIT THESE ----------------
-RAVDESS_ROOT = "/media/root918/OS/MaryiamProject/copiedFilesRAVDESS/"   # contains Actor_xx/<vid_dir>/<CSV>
-ART_DIR      = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/artifacts/cremad_GridSearch_unscaled_MLP/bestModel_std/100_epochs_video_best/"
+RAVDESS_ROOT = "/media/root918/OS/[REDACTED]Project/copiedFilesRAVDESS/"   # contains Actor_xx/<vid_dir>/<CSV>
+ART_DIR      = "/media/root918/OS/[REDACTED]Project/CNN_RNN_CREMAD/artifacts/cremad_GridSearch_unscaled_MLP/bestModel_std/100_epochs_video_best/"
 WEIGHTS      = os.path.join(ART_DIR, "best.pt")
 FEATCOLS     = os.path.join(ART_DIR, "feature_cols.json")       # trained feature list
 SCALER_P     = os.path.join(ART_DIR, "scaler.pt")               # optional if NORMALIZE="train"
@@ -37,7 +37,7 @@ MLP_CFG = {
 }
 
 # Master list = ALL features to cache (order used to write X_all.npy)
-MASTER_FEATURE_COLS_JSON = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/data/master_feature_cols.json"
+MASTER_FEATURE_COLS_JSON = "/media/root918/OS/[REDACTED]Project/CNN_RNN_CREMAD/data/master_feature_cols.json"
 
 # RAVDESS CSV naming
 COMBINED_CSV_NAME   = "au_resnet_vgg_with_gt.csv"

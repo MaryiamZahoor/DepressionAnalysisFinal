@@ -49,12 +49,12 @@ def _set_seed(s=1337):
     torch.backends.cudnn.deterministic=True; torch.backends.cudnn.benchmark=False
 
 # ---------- RAVDESS paths ----------
-SPLIT_PATH = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/data/"
+SPLIT_PATH = "/media/root918/OS/[REDACTED]Project/CNN_RNN_CREMAD/data/"
 TRAIN_LIST = os.path.join(SPLIT_PATH, "train_videos_RAV.txt")
 VAL_LIST   = os.path.join(SPLIT_PATH, "val_videos_RAV.txt")
 TEST_LIST  = os.path.join(SPLIT_PATH, "test_videos_RAV.txt")
 
-PROJECT_DIR = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/"
+PROJECT_DIR = "/media/root918/OS/[REDACTED]Project/CNN_RNN_CREMAD/"
 ART_DIR_TAG = "ravdess_GridSearch_unscaled_MLP"
 ART_DIR_SUB = os.path.join(PROJECT_DIR, "artifacts", ART_DIR_TAG)
 GRID_OUT_DIR= os.path.join(ART_DIR_SUB, "grid_RAV")
@@ -65,7 +65,7 @@ os.makedirs(GRID_OUT_DIR, exist_ok=True); os.makedirs(CONFIGS_DIR, exist_ok=True
 RAV_RESULTS_CSV = os.path.join(GRID_OUT_DIR, "grid_results_val_train_test.csv")
 
 # caches / features
-OUTPUT_DIR = "/media/root918/OS/MaryiamProject/copiedFilesRAVDESS/"
+OUTPUT_DIR = "/media/root918/OS/[REDACTED]Project/copiedFilesRAVDESS/"
 MASTER_FEATURES_JSON = os.path.join(GRID_OUT_DIR, "master_feature_cols.json")
 IDS_LABELS_CACHE     = os.path.join(GRID_OUT_DIR, "ids_labels_all.json")
 MASTER_SCAN_LIMIT    = 10

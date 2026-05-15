@@ -57,18 +57,18 @@ def _set_seed(seed: int = 1337):
 # ======================
 #   COMBINED DATA PATHS
 # ======================
-COMB_SPLIT_PATH = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/data/"
+COMB_SPLIT_PATH = "/media/root918/OS/[REDACTED]Project/CNN_RNN_CREMAD/data/"
 TRAIN_LIST = os.path.join(COMB_SPLIT_PATH, "train_videos_COMBINED.txt")
 VAL_LIST   = os.path.join(COMB_SPLIT_PATH, "val_videos_COMBINED.txt")
 TEST_LIST  = os.path.join(COMB_SPLIT_PATH, "test_videos_COMBINED.txt")
 
 # Dataset roots (existing caches live under each video folder)
-CREMA_ROOT   = "/media/root918/OS/MaryiamProject/CREMA-D/copiedFiles/"
-RAVDESS_ROOT = "/media/root918/OS/MaryiamProject/copiedFilesRAVDESS/"
+CREMA_ROOT   = "/media/root918/OS/[REDACTED]Project/CREMA-D/copiedFiles/"
+RAVDESS_ROOT = "/media/root918/OS/[REDACTED]Project/copiedFilesRAVDESS/"
 CANDIDATE_CACHE_DIRS = ["cache"]  # existing cache folders that contain X.npy and y.npy/y_str.npy
 
 # Artifacts
-PROJECT_DIR  = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/"
+PROJECT_DIR  = "/media/root918/OS/[REDACTED]Project/CNN_RNN_CREMAD/"
 ART_DIR_TAG  = "combined_GridSearch_unscaled_MLP"
 ART_DIR_SUB  = os.path.join(PROJECT_DIR, "artifacts", ART_DIR_TAG)
 GRID_OUT_DIR = os.path.join(ART_DIR_SUB, "grid_COMBINED")

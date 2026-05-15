@@ -24,14 +24,14 @@ import torch.nn as nn
 
 # ======== EDIT THESE ========
 # Artifacts from the SAME training run (RNN):
-WEIGHTS_PATH = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/artifacts/artifacts/combined_GridSearch_unscaled_RNN/std_results/final_trainval_best_by_seqacc/best.pt"  
-FEATCOLS_JSON = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/artifacts/artifacts/combined_GridSearch_unscaled_RNN/std_results/final_trainval_best_by_seqacc/feature_cols.json"  # trained feature list (order the model expects)
+WEIGHTS_PATH = "/media/root918/OS/[REDACTED]Project/CNN_RNN_CREMAD/artifacts/artifacts/combined_GridSearch_unscaled_RNN/std_results/final_trainval_best_by_seqacc/best.pt"  
+FEATCOLS_JSON = "/media/root918/OS/[REDACTED]Project/CNN_RNN_CREMAD/artifacts/artifacts/combined_GridSearch_unscaled_RNN/std_results/final_trainval_best_by_seqacc/feature_cols.json"  # trained feature list (order the model expects)
 
 # DAIC paths
-DAIC_ROOT  = "/media/root918/DATA/Projects/Maryiam_Projects/DepressionAnalysis/DAIC_WOZ/Data/"
-LABELS_CSV = "/media/root918/DATA/Projects/Maryiam_Projects/DepressionAnalysis/DAIC_WOZ/Labels/detailed_lables.csv"
+DAIC_ROOT  = "/media/root918/DATA/Projects/[REDACTED]_Projects/DepressionAnalysis/DAIC_WOZ/Data/"
+LABELS_CSV = "/media/root918/DATA/Projects/[REDACTED]_Projects/DepressionAnalysis/DAIC_WOZ/Labels/detailed_lables.csv"
 
-OUT_DIR    = "/media/root918/OS/MaryiamProject/DAIC_RESULTS_RNN_UNSTD_COMBINED/"
+OUT_DIR    = "/media/root918/OS/[REDACTED]Project/DAIC_RESULTS_RNN_UNSTD_COMBINED/"
 os.makedirs(OUT_DIR, exist_ok=True)
 
 # Model arch (must match training):

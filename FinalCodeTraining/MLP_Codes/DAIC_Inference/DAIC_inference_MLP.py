@@ -16,14 +16,14 @@ from models.TwoLayerMLP import FrameClassifier
 
 # ---------- EDIT THESE ----------
 # Artifacts from the SAME training run:
-MODEL_PATH     = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/artifacts/combined_GridSearch_unscaled_MLP/final_trainval_best_by_frameacc/best.pt"
-FEATCOLS_JSON  = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/artifacts/combined_GridSearch_unscaled_MLP/final_trainval_best_by_frameacc/feature_cols.json"    # list[str]: e.g., 'feat_0_resnet', ..., 'AU01_c', ...
+MODEL_PATH     = "/media/root918/OS/[REDACTED]Project/CNN_RNN_CREMAD/artifacts/combined_GridSearch_unscaled_MLP/final_trainval_best_by_frameacc/best.pt"
+FEATCOLS_JSON  = "/media/root918/OS/[REDACTED]Project/CNN_RNN_CREMAD/artifacts/combined_GridSearch_unscaled_MLP/final_trainval_best_by_frameacc/feature_cols.json"    # list[str]: e.g., 'feat_0_resnet', ..., 'AU01_c', ...
 # (No scaler: we compute target-domain stats here)
 
 # DAIC paths
-DAIC_ROOT      = "/media/root918/DATA/Projects/Maryiam_Projects/DepressionAnalysis/DAIC_WOZ/Data/"
-LABELS_CSV     = "/media/root918/DATA/Projects/Maryiam_Projects/DepressionAnalysis/DAIC_WOZ/Labels/detailed_lables.csv"
-OUT_DIR        = "/media/root918/OS/MaryiamProject/DAIC_RESULTS_MLP_UNSTD_COMBINED/"         # per-subject CSV + summary JSON
+DAIC_ROOT      = "/media/root918/DATA/Projects/[REDACTED]_Projects/DepressionAnalysis/DAIC_WOZ/Data/"
+LABELS_CSV     = "/media/root918/DATA/Projects/[REDACTED]_Projects/DepressionAnalysis/DAIC_WOZ/Labels/detailed_lables.csv"
+OUT_DIR        = "/media/root918/OS/[REDACTED]Project/DAIC_RESULTS_MLP_UNSTD_COMBINED/"         # per-subject CSV + summary JSON
 os.makedirs(OUT_DIR, exist_ok=True)
 
 # MLP architecture USED DURING TRAINING (must match!)

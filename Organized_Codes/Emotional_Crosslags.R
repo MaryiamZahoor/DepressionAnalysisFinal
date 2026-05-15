@@ -19,13 +19,13 @@ library(sjPlot)
 
 ###################################################### DONT RUN AGAIN ######################################
 # List of participant files
-file_list <- list.files("/media/maryiam/Work/Research/AU to emotion/CREMADExperiments/DAIC_Results/DAIC_Results_NEW/DAIC_RESULTS_MLP_UNSTD_COMBINED/avg_1_sec", pattern = "*.csv", full.names = TRUE)
-#RNN"/media/maryiam/Work/Research/AU to emotion/CREMADExperiments/DAIC_Results/DAIC_Results_NEW/DAIC_RESULTS_RNN_STD/framewise/avg_1_sec"
-#MLP""/media/maryiam/Work/Research/AU to emotion/CREMADExperiments/DAIC_Results/DAIC_Results_NEW/DAIC_RESULTS_MLP/DAIC_RESULTS_MLP_STD/avg_1_sec"
+file_list <- list.files("/media/[REDACTED]/Work/Research/AU to emotion/CREMADExperiments/DAIC_Results/DAIC_Results_NEW/DAIC_RESULTS_MLP_UNSTD_COMBINED/avg_1_sec", pattern = "*.csv", full.names = TRUE)
+#RNN"/media/[REDACTED]/Work/Research/AU to emotion/CREMADExperiments/DAIC_Results/DAIC_Results_NEW/DAIC_RESULTS_RNN_STD/framewise/avg_1_sec"
+#MLP""/media/[REDACTED]/Work/Research/AU to emotion/CREMADExperiments/DAIC_Results/DAIC_Results_NEW/DAIC_RESULTS_MLP/DAIC_RESULTS_MLP_STD/avg_1_sec"
 
 #reading depression labels:
-label_file <- fread("/media/maryiam/Work/Research/DAIC Dataset/filtered_participants_corrected_labels.csv")
-#label_file <- fread("/media/maryiam/Work/Research/DAIC Dataset/participants_3parts_labeled.csv")
+label_file <- fread("/media/[REDACTED]/Work/Research/DAIC Dataset/filtered_participants_corrected_labels.csv")
+#label_file <- fread("/media/[REDACTED]/Work/Research/DAIC Dataset/participants_3parts_labeled.csv")
 #participants_3parts_labeled, participants_corrected_labeled , equal_participant_randomized_5
 #participants_5_10_labeled , participants_all_thresholds_labeled
 label_file[, Depression_severity_centered := Depression_severity - mean(Depression_severity, na.rm = TRUE)]

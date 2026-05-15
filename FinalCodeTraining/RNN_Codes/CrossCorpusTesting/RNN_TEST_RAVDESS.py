@@ -23,14 +23,14 @@ from sklearn.metrics import classification_report, confusion_matrix, ConfusionMa
 import matplotlib.pyplot as plt
 
 # ========== CONFIG: EDIT ME ==========
-RAVDESS_ROOT = "/media/root918/OS/MaryiamProject/copiedFilesRAVDESS/"   # contains Actor_XX/<video_dir>/<csv>
-WEIGHTS_PATH = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/artifacts/cremad_GridSearch_unscaled_RNN/bestModels/bestModels_std_300epoch_corrected/best_full_trainval_seq/best_full_trainval_seq.pt"
+RAVDESS_ROOT = "/media/root918/OS/[REDACTED]Project/copiedFilesRAVDESS/"   # contains Actor_XX/<video_dir>/<csv>
+WEIGHTS_PATH = "/media/root918/OS/[REDACTED]Project/CNN_RNN_CREMAD/artifacts/cremad_GridSearch_unscaled_RNN/bestModels/bestModels_std_300epoch_corrected/best_full_trainval_seq/best_full_trainval_seq.pt"
 
 # master list = ALL feature names in the unified order used to cache X.npy
-MASTER_FEATURE_COLS_JSON = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/artifacts/cremad_GridSearch_unscaled_RNN/master_feature_cols.json"
+MASTER_FEATURE_COLS_JSON = "/media/root918/OS/[REDACTED]Project/CNN_RNN_CREMAD/artifacts/cremad_GridSearch_unscaled_RNN/master_feature_cols.json"
 
 # trained-config list = ONLY the features used by the best model
-FEATCOLS_JSON = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/artifacts/cremad_GridSearch_unscaled_RNN/bestModels/bestModels_std_300epoch_corrected/best_full_trainval_seq/feature_cols.json"
+FEATCOLS_JSON = "/media/root918/OS/[REDACTED]Project/CNN_RNN_CREMAD/artifacts/cremad_GridSearch_unscaled_RNN/bestModels/bestModels_std_300epoch_corrected/best_full_trainval_seq/feature_cols.json"
 
 COMBINED_CSV_NAME = "au_resnet_vgg_with_gt.csv"
 LABEL_COL_PREFERRED = "emotion"

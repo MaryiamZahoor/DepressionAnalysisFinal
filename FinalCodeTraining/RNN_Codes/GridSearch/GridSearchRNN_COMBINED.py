@@ -79,17 +79,17 @@ def _set_seed(seed: int = 1337):
 #   COMBINED DATA PATHS
 # ======================
 # Combined split TXT files you generated earlier (ids formatted as "crema::<vid>" or "ravdess::Actor_xx/<vid>")
-COMB_SPLIT_PATH = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/data/"
+COMB_SPLIT_PATH = "/media/root918/OS/[REDACTED]Project/CNN_RNN_CREMAD/data/"
 TRAIN_LIST = os.path.join(COMB_SPLIT_PATH, "train_videos_COMBINED.txt")
 VAL_LIST   = os.path.join(COMB_SPLIT_PATH, "val_videos_COMBINED.txt")
 TEST_LIST  = os.path.join(COMB_SPLIT_PATH, "test_videos_COMBINED.txt")
 
 # Dataset roots
-CREMA_ROOT   = "/media/root918/OS/MaryiamProject/CREMA-D/copiedFiles/"
-RAVDESS_ROOT = "/media/root918/OS/MaryiamProject/copiedFilesRAVDESS/"
+CREMA_ROOT   = "/media/root918/OS/[REDACTED]Project/CREMA-D/copiedFiles/"
+RAVDESS_ROOT = "/media/root918/OS/[REDACTED]Project/copiedFilesRAVDESS/"
 
 # Where artifacts go
-PROJECT_DIR  = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD"
+PROJECT_DIR  = "/media/root918/OS/[REDACTED]Project/CNN_RNN_CREMAD"
 ART_DIR_TAG  = "combined_GridSearch_unscaled_RNN"
 ART_DIR_SUB  = os.path.join(PROJECT_DIR, "artifacts", ART_DIR_TAG)
 GRID_OUT_DIR = os.path.join(ART_DIR_SUB, "grid_COMBINED_RNN")

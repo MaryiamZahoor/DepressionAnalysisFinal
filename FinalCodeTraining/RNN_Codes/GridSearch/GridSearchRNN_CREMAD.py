@@ -41,7 +41,7 @@ PREFETCH_FACTOR = 4
 # ======================
 #   USER CONSTANTS
 # ======================
-SPLIT_PATH  = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/data/"
+SPLIT_PATH  = "/media/root918/OS/[REDACTED]Project/CNN_RNN_CREMAD/data/"
 TRAIN_LIST  = os.path.join(SPLIT_PATH, "train_videos_full.txt")
 VAL_LIST    = os.path.join(SPLIT_PATH, "val_videos_full.txt")
 TEST_LIST   = os.path.join(SPLIT_PATH, "test_videos_full.txt")
@@ -51,7 +51,7 @@ MASTER_FEATURES_JSON = os.path.join(SPLIT_PATH, "master_feature_cols.json")
 MASTER_SCAN_LIMIT = 10   # only scan first N videos we find
 
 INCLUDE_LIST = None
-EXCLUDE_LIST = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/exclude_videos.txt"
+EXCLUDE_LIST = "/media/root918/OS/[REDACTED]Project/CNN_RNN_CREMAD/exclude_videos.txt"
 
 LABEL_COL          = getattr(CFG, "SPLIT_LABEL_COL", "GT_Emotion")
 SKIP_FIRST_N       = getattr(CFG, "SKIP_FRAME", 0)
@@ -61,7 +61,7 @@ EMOTION_TO_IDX     = getattr(CFG, "emotion_to_idx")
 IDX_TO_EMO         = {v:k for k,v in EMOTION_TO_IDX.items()}
 
 ART_DIR_TAG   = "cremad_GridSearch_unscaled_RNN"
-PROJECT_DIR   = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/"
+PROJECT_DIR   = "/media/root918/OS/[REDACTED]Project/CNN_RNN_CREMAD/"
 ART_DIR_SUB   = os.path.join(PROJECT_DIR, "artifacts", ART_DIR_TAG)
 os.makedirs(ART_DIR_SUB, exist_ok=True)
 BEST_WEIGHTS  = os.path.join(ART_DIR_SUB, f"best_{ART_DIR_TAG}.pt")
@@ -1287,7 +1287,7 @@ def main():
 
         # --- BEST BY SEQ: retrain on TRAIN+VAL, then test ---
         best_tag_seq = _config_tag(best_by_seq)
-        best_dir_seq = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/artifacts/cremad_GridSearch_unscaled_RNN/bestModels/bestModels_std_300epoch_corrected/best_full_trainval_seq/"
+        best_dir_seq = "/media/root918/OS/[REDACTED]Project/CNN_RNN_CREMAD/artifacts/cremad_GridSearch_unscaled_RNN/bestModels/bestModels_std_300epoch_corrected/best_full_trainval_seq/"
         os.makedirs(best_dir_seq, exist_ok=True)
         print(best_tag_seq)
         print("\n=== FULL TRAIN+VAL: BEST by SEQUENCE ACC ===")
@@ -1301,7 +1301,7 @@ def main():
         # --- BEST BY VIDEO (frame-agg): retrain on TRAIN+VAL, then test ---
         if best_by_vid["tag"] != best_by_seq["tag"]:
             best_tag_vid = _config_tag(best_by_vid)
-            best_dir_vid = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/artifacts/cremad_GridSearch_unscaled_RNN/bestModels/bestModels_std_300epoch_corrected/best_full_trainval_video/"
+            best_dir_vid = "/media/root918/OS/[REDACTED]Project/CNN_RNN_CREMAD/artifacts/cremad_GridSearch_unscaled_RNN/bestModels/bestModels_std_300epoch_corrected/best_full_trainval_video/"
             os.makedirs(best_dir_vid, exist_ok=True)
             print("\n=== FULL TRAIN+VAL: BEST by VIDEO ACC (frame-agg) ===")
             full_vid_weights = train_full_on_trainval(best_by_vid, master_feature_cols,

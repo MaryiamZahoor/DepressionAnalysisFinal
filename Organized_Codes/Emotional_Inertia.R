@@ -17,13 +17,13 @@ library(sjPlot)
 
 ###################################################### DONT RUN AGAIN ######################################
 # List of participant files
-file_list <- list.files("/media/maryiam/Work/Research/AU to emotion/CREMADExperiments/DAIC_Results/DAIC_Results_NEW/DAIC_RESULTS_RNN_STD/framewise/avg_1_sec", pattern = "*.csv", full.names = TRUE)
-#RNN"/media/maryiam/Work/Research/AU to emotion/CREMADExperiments/DAIC_Results/DAIC_Results_NEW/DAIC_RESULTS_RNN_STD/framewise/avg_1_sec"
-#MLP""/media/maryiam/Work/Research/AU to emotion/CREMADExperiments/DAIC_Results/DAIC_Results_NEW/DAIC_RESULTS_MLP/DAIC_RESULTS_MLP_STD/avg_1_sec"
+file_list <- list.files("/media/[REDACTED]/Work/Research/AU to emotion/CREMADExperiments/DAIC_Results/DAIC_Results_NEW/DAIC_RESULTS_RNN_STD/framewise/avg_1_sec", pattern = "*.csv", full.names = TRUE)
+#RNN"/media/[REDACTED]/Work/Research/AU to emotion/CREMADExperiments/DAIC_Results/DAIC_Results_NEW/DAIC_RESULTS_RNN_STD/framewise/avg_1_sec"
+#MLP""/media/[REDACTED]/Work/Research/AU to emotion/CREMADExperiments/DAIC_Results/DAIC_Results_NEW/DAIC_RESULTS_MLP/DAIC_RESULTS_MLP_STD/avg_1_sec"
 
 #reading depression labels:
-label_file <- fread("/media/maryiam/Work/Research/DAIC Dataset/filtered_participants_corrected_labels.csv")
-#label_file <- fread("/media/maryiam/Work/Research/DAIC Dataset/participants_3parts_labeled.csv")
+label_file <- fread("/media/[REDACTED]/Work/Research/DAIC Dataset/filtered_participants_corrected_labels.csv")
+#label_file <- fread("/media/[REDACTED]/Work/Research/DAIC Dataset/participants_3parts_labeled.csv")
 #participants_3parts_labeled, participants_corrected_labeled , equal_participant_randomized_5
 #participants_5_10_labeled , participants_all_thresholds_labeled
 label_file[, Depression_severity_centered := Depression_severity - mean(Depression_severity, na.rm = TRUE)]
@@ -159,7 +159,7 @@ tab_model(
   show.re.var = FALSE, show.icc = FALSE, show.se = TRUE, show.r2 = TRUE,
   show.ci = 0.95, digits = 3, string.ci = "95% CI",
   p.val = "satterthwaite", collapse.se = TRUE, string.est = "Estimate (SE)",
-  file = "/media/maryiam/Work/Research/R_experiments/Result/MLM/DepressionLabel/1.html"
+  file = "/media/[REDACTED]/Work/Research/R_experiments/Result/MLM/DepressionLabel/1.html"
 )
 
 # ------------------ MLM: Depression SEVERITY (centered) ------------------
@@ -178,7 +178,7 @@ tab_model(
   show.re.var = FALSE, show.icc = FALSE, show.se = TRUE, show.r2 = TRUE,
   show.ci = 0.95, digits = 3, string.ci = "95% CI",
   p.val = "satterthwaite", collapse.se = TRUE, string.est = "Estimate (SE)",
-  file = "/media/maryiam/Work/Research/R_experiments/Result/MLM/Depression_Severity/PE_NE_N_lag5_severity.html"
+  file = "/media/[REDACTED]/Work/Research/R_experiments/Result/MLM/Depression_Severity/PE_NE_N_lag5_severity.html"
 )
 
 ########################for indivdual emotions########################################

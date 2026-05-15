@@ -54,16 +54,16 @@ def _current_lr(optim):
     return optim.param_groups[0]['lr'] if optim.param_groups else float('nan')
 
 # ---------- Paths (from your existing code) ----------
-SPLIT_PATH = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/data/"
+SPLIT_PATH = "/media/root918/OS/[REDACTED]Project/CNN_RNN_CREMAD/data/"
 TRAIN_LIST = os.path.join(SPLIT_PATH, "train_videos_full.txt")
 VAL_LIST   = os.path.join(SPLIT_PATH, "val_videos_full.txt")
 TEST_LIST  = os.path.join(SPLIT_PATH, "test_videos_full.txt")
 
-EXCLUDE_LIST = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/exclude_videos.txt"
+EXCLUDE_LIST = "/media/root918/OS/[REDACTED]Project/CNN_RNN_CREMAD/exclude_videos.txt"
 INCLUDE_LIST = None
 
 ART_DIR_TAG = "cremad_GridSearch_unscaled_MLP"
-PROJECT_DIR = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/"
+PROJECT_DIR = "/media/root918/OS/[REDACTED]Project/CNN_RNN_CREMAD/"
 ART_DIR_SUB = os.path.join(PROJECT_DIR, "artifacts", ART_DIR_TAG)
 GRID_OUT_DIR = os.path.join(ART_DIR_SUB, "grid_cv")
 CONFIGS_DIR  = os.path.join(ART_DIR_SUB, "configs")

@@ -91,13 +91,13 @@ def _load_ckpt(path, model, optim, scheduler):
     return epoch, best_metric, best_state
 
 # ---------- RAVDESS paths ----------
-SPLIT_PATH = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/data/"
+SPLIT_PATH = "/media/root918/OS/[REDACTED]Project/CNN_RNN_CREMAD/data/"
 TRAIN_LIST = os.path.join(SPLIT_PATH, "train_videos_RAV.txt")
 VAL_LIST   = os.path.join(SPLIT_PATH, "val_videos_RAV.txt")
 TEST_LIST  = os.path.join(SPLIT_PATH, "test_videos_RAV.txt")
 
 # Artifacts (mirrors your CREMA-D layout, but under RAVDESS tag)
-PROJECT_DIR = "/media/root918/OS/MaryiamProject/CNN_RNN_CREMAD/"
+PROJECT_DIR = "/media/root918/OS/[REDACTED]Project/CNN_RNN_CREMAD/"
 ART_DIR_TAG = "ravdess_GridSearch_unscaled_MLP"
 ART_DIR_SUB = os.path.join(PROJECT_DIR, "artifacts", ART_DIR_TAG)
 GRID_OUT_DIR= os.path.join(ART_DIR_SUB, "grid_RAV")
@@ -109,7 +109,7 @@ os.makedirs(CONFIGS_DIR, exist_ok=True)
 IDS_LABELS_CACHE     = os.path.join(GRID_OUT_DIR, "ids_labels.json")
 MASTER_FEATURES_JSON = os.path.join(GRID_OUT_DIR, "master_feature_cols.json")
 MASTER_SCAN_LIMIT    = 10
-OUTPUT_DIR= "/media/root918/OS/MaryiamProject/copiedFilesRAVDESS/"
+OUTPUT_DIR= "/media/root918/OS/[REDACTED]Project/copiedFilesRAVDESS/"
 
 # Labels / columns
 LABEL_COL         = "emotion" # e.g., "emotion" after harmonize
