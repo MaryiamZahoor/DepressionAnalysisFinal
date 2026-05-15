@@ -7,7 +7,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if ROOT not in sys.path:
     sys.path.insert(0, ROOT)
 
-OUTPUT_DIR= "/media/root918/OS/MaryiamProject/copiedFilesRAVDESS/"          # RAVDESS processed root: Actor_xx/<vid_dir>/<CSV>
+OUTPUT_DIR= "/media/root918/OS/Project/copiedFilesRAVDESS/"          # RAVDESS processed root: Actor_xx/<vid_dir>/<CSV>
 SEED       = 42
 
 # =========================
@@ -17,7 +17,7 @@ COMBINED_CSV_NAME = "au_resnet_vgg_with_gt.csv"
 PREFERRED_LABEL_COLS = "emotion"
 
 # -------- SPLIT LIST PATHS (edit to your preferred location) --------
-SPLIT_PATH = "/media/root918/OS/MaryiamProject/CNN_RNN_RAVDESS/data/"
+SPLIT_PATH = "/media/root918/OS/Project/CNN_RNN_RAVDESS/data/"
 
 TRAIN_LIST = os.path.join(SPLIT_PATH, "train_videos_RAV.txt")
 VAL_LIST   = os.path.join(SPLIT_PATH, "val_videos_RAV.txt")
